@@ -1,0 +1,101 @@
+2017-04-23T03:37:48.015069+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2017-04-23T03:37:48.014981+00:00 app[web.1]: npm ERR!     npm owner ls node-chat-app
+2017-04-23T03:37:48.027125+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-04-23T03:37:48.026922+00:00 app[web.1]: 
+2017-04-23T03:37:48.027212+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-04-23T03:37:47.991430+00:00 heroku[router]: at=info method=POST path="/socket.io/?EIO=3&transport=polling&t=LkOumcv&sid=M7-YzVghGb1l6U1eAAAA" host=desolate-ravine-26983.herokuapp.com request_id=47ee523e-f6c3-4bd0-b2bc-2f499c13bb63 fwd="98.247.180.28" dyno=web.1 connect=0ms service=6ms status=200 bytes=208 protocol=https
+2017-04-23T03:37:48.110069+00:00 heroku[web.1]: State changed from up to crashed
+2017-04-23T03:37:48.111494+00:00 heroku[web.1]: State changed from crashed to starting
+2017-04-23T03:37:47.999030+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOumd3&sid=O3GpbRm9VtCQWIINAAAC" host=desolate-ravine-26983.herokuapp.com request_id=99ed67a5-c3e8-4ae5-8a6f-ea574249bd7e fwd="98.247.180.28" dyno=web.1 connect=0ms service=3ms status=503 bytes=0 protocol=https
+2017-04-23T03:37:48.102258+00:00 heroku[web.1]: Process exited with status 1
+2017-04-23T03:37:49.876197+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-04-23T03:37:53.728996+00:00 app[web.1]: 
+2017-04-23T03:37:53.729016+00:00 app[web.1]: > node-chat-app@1.0.0 start /app
+2017-04-23T03:37:53.729017+00:00 app[web.1]: > node server/server.js
+2017-04-23T03:37:53.729017+00:00 app[web.1]: 
+2017-04-23T03:37:54.234500+00:00 app[web.1]: /app/server/../public
+2017-04-23T03:37:54.236014+00:00 app[web.1]: /app/public
+2017-04-23T03:37:54.287333+00:00 app[web.1]: Chat server is up at port 33232
+2017-04-23T03:37:54.672817+00:00 heroku[web.1]: State changed from starting to up
+2017-04-23T03:37:55.267884+00:00 heroku[router]: at=info method=POST path="/socket.io/?EIO=3&transport=polling&t=LkOumzR&sid=M7-YzVghGb1l6U1eAAAA" host=desolate-ravine-26983.herokuapp.com request_id=f0311785-d4b9-454d-8e99-ccbc280f6687 fwd="98.247.180.28" dyno=web.1 connect=0ms service=17ms status=400 bytes=228 protocol=https
+2017-04-23T03:37:55.469178+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOunDG" host=desolate-ravine-26983.herokuapp.com request_id=9f7c3275-9a86-4175-82ab-e5d9453ef427 fwd="98.247.180.28" dyno=web.1 connect=0ms service=21ms status=200 bytes=324 protocol=https
+2017-04-23T03:37:55.562493+00:00 heroku[router]: at=info method=POST path="/socket.io/?EIO=3&transport=polling&t=LkOumzZ&sid=O3GpbRm9VtCQWIINAAAC" host=desolate-ravine-26983.herokuapp.com request_id=7ad190b4-fdc7-4654-be25-7d45cc758cc6 fwd="98.247.180.28" dyno=web.1 connect=0ms service=1ms status=400 bytes=228 protocol=https
+2017-04-23T03:37:55.689037+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuoXj&sid=I58_UGO1NHITm0EqAAAA" host=desolate-ravine-26983.herokuapp.com request_id=63aff29f-c4e0-45a9-ace0-d630cb62fe0e fwd="98.247.180.28" dyno=web.1 connect=0ms service=7ms status=200 bytes=324 protocol=https
+2017-04-23T03:37:55.479353+00:00 app[web.1]: New user connected
+2017-04-23T03:37:55.744005+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOunHa" host=desolate-ravine-26983.herokuapp.com request_id=31c3cd11-ad8d-4a4a-8a11-b973ab3b0dd3 fwd="98.247.180.28" dyno=web.1 connect=0ms service=18ms status=200 bytes=324 protocol=https
+2017-04-23T03:37:55.841558+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOumtK" host=desolate-ravine-26983.herokuapp.com request_id=4dcf9d0b-bfba-4edd-b626-7db4f54384eb fwd="98.247.180.28" dyno=web.1 connect=1ms service=2ms status=200 bytes=324 protocol=https
+2017-04-23T03:37:55.858983+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuoav&sid=I58_UGO1NHITm0EqAAAA" host=desolate-ravine-26983.herokuapp.com request_id=05152a89-7f83-4fb2-a201-c094421e1fae fwd="98.247.180.28" dyno=web.1 connect=0ms service=3ms status=200 bytes=429 protocol=https
+2017-04-23T03:37:55.749041+00:00 app[web.1]: New user connected
+2017-04-23T03:37:55.840396+00:00 app[web.1]: New user connected
+2017-04-23T03:37:55.976100+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuod4&sid=yVIfahwSiInD7XiAAAAC" host=desolate-ravine-26983.herokuapp.com request_id=b907d36e-c03b-4f0a-865d-a67084f92993 fwd="98.247.180.28" dyno=web.1 connect=1ms service=1ms status=200 bytes=324 protocol=https
+2017-04-23T03:37:55.973455+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuobn&sid=0Xvz0Krr-o--vloqAAAB" host=desolate-ravine-26983.herokuapp.com request_id=498b3923-24db-478c-a74d-8f186064ddfc fwd="98.247.180.28" dyno=web.1 connect=0ms service=2ms status=200 bytes=427 protocol=https
+2017-04-23T03:37:56.202972+00:00 app[web.1]: createMessage { to: 'shansen5', text: 'How are you?' }
+2017-04-23T03:37:56.204578+00:00 app[web.1]: /app/server/server.js:27
+2017-04-23T03:37:56.204579+00:00 app[web.1]:         callback();
+2017-04-23T03:37:56.204580+00:00 app[web.1]:         ^
+2017-04-23T03:37:56.204581+00:00 app[web.1]: 
+2017-04-23T03:37:56.204582+00:00 app[web.1]: TypeError: callback is not a function
+2017-04-23T03:37:56.204582+00:00 app[web.1]:     at Socket.socket.on (/app/server/server.js:27:9)
+2017-04-23T03:37:56.204583+00:00 app[web.1]:     at emitOne (events.js:96:13)
+2017-04-23T03:37:56.204584+00:00 app[web.1]:     at Socket.emit (events.js:191:7)
+2017-04-23T03:37:56.204584+00:00 app[web.1]:     at /app/node_modules/socket.io/lib/socket.js:503:12
+2017-04-23T03:37:56.204585+00:00 app[web.1]:     at _combinedTickCallback (internal/process/next_tick.js:73:7)
+2017-04-23T03:37:56.204586+00:00 app[web.1]:     at process._tickCallback (internal/process/next_tick.js:104:9)
+2017-04-23T03:37:56.213614+00:00 app[web.1]: 
+2017-04-23T03:37:56.220838+00:00 app[web.1]: npm ERR! Linux 3.13.0-112-generic
+2017-04-23T03:37:56.221085+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2017-04-23T03:37:56.221301+00:00 app[web.1]: npm ERR! node v7.7.4
+2017-04-23T03:37:56.221492+00:00 app[web.1]: npm ERR! npm  v4.1.2
+2017-04-23T03:37:56.221690+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-04-23T03:37:56.221843+00:00 app[web.1]: npm ERR! node-chat-app@1.0.0 start: `node server/server.js`
+2017-04-23T03:37:56.221982+00:00 app[web.1]: npm ERR! Exit status 1
+2017-04-23T03:37:56.222133+00:00 app[web.1]: npm ERR! 
+2017-04-23T03:37:56.222264+00:00 app[web.1]: npm ERR! Failed at the node-chat-app@1.0.0 start script 'node server/server.js'.
+2017-04-23T03:37:56.223663+00:00 app[web.1]: npm ERR! Make sure you have the latest version of node.js and npm installed.
+2017-04-23T03:37:56.223842+00:00 app[web.1]: npm ERR! If you do, this is most likely a problem with the node-chat-app package,
+2017-04-23T03:37:56.224050+00:00 app[web.1]: npm ERR! not with npm itself.
+2017-04-23T03:37:56.224253+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2017-04-23T03:37:56.224395+00:00 app[web.1]: npm ERR!     node server/server.js
+2017-04-23T03:37:56.224537+00:00 app[web.1]: npm ERR! You can get information on how to open an issue for this project with:
+2017-04-23T03:37:56.224713+00:00 app[web.1]: npm ERR!     npm bugs node-chat-app
+2017-04-23T03:37:56.224876+00:00 app[web.1]: npm ERR! Or if that isn't available, you can get their info via:
+2017-04-23T03:37:56.225079+00:00 app[web.1]: npm ERR!     npm owner ls node-chat-app
+2017-04-23T03:37:56.225283+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2017-04-23T03:37:56.234432+00:00 app[web.1]: 
+2017-04-23T03:37:56.234669+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-04-23T03:37:56.234783+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-04-23T03:37:56.210295+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuofW&sid=0Xvz0Krr-o--vloqAAAB" host=desolate-ravine-26983.herokuapp.com request_id=a252455a-61bf-44db-88a8-58e466638903 fwd="98.247.180.28" dyno=web.1 connect=0ms service=26ms status=503 bytes=0 protocol=https
+2017-04-23T03:37:56.203470+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuoeA&sid=I58_UGO1NHITm0EqAAAA" host=desolate-ravine-26983.herokuapp.com request_id=6b172384-1b0b-4990-b39d-7276d38bcbfd fwd="98.247.180.28" dyno=web.1 connect=3ms service=156ms status=200 bytes=292 protocol=https
+2017-04-23T03:37:56.205517+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuofQ&sid=yVIfahwSiInD7XiAAAAC" host=desolate-ravine-26983.herokuapp.com request_id=edc2ef3f-fcb9-47aa-9e19-33d851f7bbdd fwd="98.247.180.28" dyno=web.1 connect=1ms service=25ms status=200 bytes=292 protocol=https
+2017-04-23T03:37:56.209410+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=websocket&sid=I58_UGO1NHITm0EqAAAA" host=desolate-ravine-26983.herokuapp.com request_id=ebf6762d-0749-4285-9616-ba78b0b08b90 fwd="98.247.180.28" dyno=web.1 connect=1ms service=160ms status=101 bytes=175 protocol=https
+2017-04-23T03:37:56.357261+00:00 heroku[web.1]: State changed from up to crashed
+2017-04-23T03:37:56.207893+00:00 heroku[router]: at=info method=POST path="/socket.io/?EIO=3&transport=polling&t=LkOuofQ&sid=0Xvz0Krr-o--vloqAAAB" host=desolate-ravine-26983.herokuapp.com request_id=92ee46e1-d3f5-44e8-9b42-05be76faa1ed fwd="98.247.180.28" dyno=web.1 connect=0ms service=20ms status=200 bytes=208 protocol=https
+2017-04-23T03:37:56.343548+00:00 heroku[web.1]: Process exited with status 1
+2017-04-23T03:37:57.403650+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/socket.io/?EIO=3&transport=polling&t=LkOuoyv&sid=0Xvz0Krr-o--vloqAAAB" host=desolate-ravine-26983.herokuapp.com request_id=49cac73f-2b61-46e8-87fa-17f30a6f7c74 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:37:57.322864+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuoiX&sid=yVIfahwSiInD7XiAAAAC" host=desolate-ravine-26983.herokuapp.com request_id=4b86a668-0a45-4e80-96b9-cdd8ed8c9faf fwd="98.247.180.28" dyno=web.1 connect=1ms service= status=503 bytes= protocol=https
+2017-04-23T03:37:57.299593+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=websocket&sid=0Xvz0Krr-o--vloqAAAB" host=desolate-ravine-26983.herokuapp.com request_id=1014a4aa-4c1b-4f2b-9131-c82874afb7dc fwd="98.247.180.28" dyno=web.1 connect=0ms service= status=503 bytes= protocol=https
+2017-04-23T03:37:57.428956+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/socket.io/?EIO=3&transport=polling&t=LkOuo-2&sid=yVIfahwSiInD7XiAAAAC" host=desolate-ravine-26983.herokuapp.com request_id=1904b8ab-867a-4212-8a2d-1e2d7294e33c fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:37:58.395187+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOupCa" host=desolate-ravine-26983.herokuapp.com request_id=94ffcf55-835d-453b-abeb-2302c23f3699 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:37:58.739855+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOupCa" host=desolate-ravine-26983.herokuapp.com request_id=7ea73e74-2640-41bf-9487-47151c547d4f fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:37:58.642019+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOupGo" host=desolate-ravine-26983.herokuapp.com request_id=abd34bd0-b653-4515-8103-c291d83433d1 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:01.366030+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=websocket&sid=M7-YzVghGb1l6U1eAAAA" host=desolate-ravine-26983.herokuapp.com request_id=e01fe6c9-214c-45c1-a094-c92a19ab4700 fwd="98.247.180.28" dyno=web.1 connect=5000ms service= status=503 bytes= protocol=https
+2017-04-23T03:38:01.370584+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuojE&sid=I58_UGO1NHITm0EqAAAA" host=desolate-ravine-26983.herokuapp.com request_id=098b7fb3-361e-412a-a8ec-d0e7bb7a32e2 fwd="98.247.180.28" dyno=web.1 connect=5001ms service= status=503 bytes= protocol=https
+2017-04-23T03:38:01.387845+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=websocket&sid=yVIfahwSiInD7XiAAAAC" host=desolate-ravine-26983.herokuapp.com request_id=52330e19-2a36-4cb1-b9a6-49304bd88c4b fwd="98.247.180.28" dyno=web.1 connect=5001ms service= status=503 bytes= protocol=https
+2017-04-23T03:38:01.721165+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuq0v" host=desolate-ravine-26983.herokuapp.com request_id=05b95898-5619-4021-aced-9a1469c5a005 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:01.721870+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuojE&sid=I58_UGO1NHITm0EqAAAA" host=desolate-ravine-26983.herokuapp.com request_id=1d2687d4-c988-48b4-9521-ab3f2fb52d8b fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:02.522687+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuq8a" host=desolate-ravine-26983.herokuapp.com request_id=153b52d8-ce56-4827-ba45-b283e4b80cc2 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:03.108603+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path="/socket.io/?EIO=3&transport=polling&t=LkOuqIh&sid=I58_UGO1NHITm0EqAAAA" host=desolate-ravine-26983.herokuapp.com request_id=0b5a480c-8405-4206-be8c-9afbfa0c9d73 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:04.108494+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuqYN" host=desolate-ravine-26983.herokuapp.com request_id=ae7e5d1d-cc4d-4aca-9eab-9043418079a5 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:05.380395+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuqvn" host=desolate-ravine-26983.herokuapp.com request_id=65c6d3d8-eecb-44c8-af72-e19f0c963c52 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:07.467385+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOurMZ" host=desolate-ravine-26983.herokuapp.com request_id=99a3d5d5-65b6-4330-8c08-4909e73daaba fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:08.883695+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOurjJ" host=desolate-ravine-26983.herokuapp.com request_id=b9fa3fa0-9b53-4cd9-bb20-ee03a72e3b0a fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:10.725798+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOus9q" host=desolate-ravine-26983.herokuapp.com request_id=c0e1ac44-ac3f-4888-8dde-5cfdfc896ef0 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:12.272405+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOusYG" host=desolate-ravine-26983.herokuapp.com request_id=eb223881-fb5d-4a1b-8926-4a913bfefa55 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:15.326243+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOutHO" host=desolate-ravine-26983.herokuapp.com request_id=fa94fba5-6dc4-40cb-895c-3a02d340c677 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:16.063159+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOutTu" host=desolate-ravine-26983.herokuapp.com request_id=61447b02-95d4-4a39-ad96-9e6625814ae4 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:18.713644+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuu5m" host=desolate-ravine-26983.herokuapp.com request_id=31ac1f88-680c-4014-a6e2-44debb59c3e3 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:19.896575+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=desolate-ravine-26983.herokuapp.com request_id=dc5a136c-9ac5-4eb3-8ff9-691734dd5f9d fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:21.743543+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuurf" host=desolate-ravine-26983.herokuapp.com request_id=97882511-4840-4cb4-878f-49d6de88cb96 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:25.844753+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuvgG" host=desolate-ravine-26983.herokuapp.com request_id=f933bec3-2295-4bc4-80fd-e0a84668c147 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:28.463461+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuwPq" host=desolate-ravine-26983.herokuapp.com request_id=250994e1-af2b-49f6-adcb-11ae6aa34bb8 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https
+2017-04-23T03:38:32.282521+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=LkOuxPp" host=desolate-ravine-26983.herokuapp.com request_id=b3a0b9b3-97de-4050-a9fb-deb227554c72 fwd="98.247.180.28" dyno= connect= service= status=503 bytes= protocol=https

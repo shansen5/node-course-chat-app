@@ -12,29 +12,35 @@ console.log( publicPath );
 const {generateMessage, generateLocationMessage} = require( './utils/message' );
 const {isRealString} = require( './utils/validation' );
 const {Users} = require( './utils/users' );
+const {Rooms} = require( './utils/rooms' );
 
 var app = express();
 var server = http.createServer( app );
 var io = socketIO( server );
 var users = new Users();
+var rooms = new Rooms();
 
 io.on( 'connection', ( socket ) => {
     console.log( 'New user connected' );
+    socket.on( 'getRooms', ( params, callback ) => {
+
+    });
     socket.on( 'join', ( params, callback ) => {
-        if ( !isRealString( params.name) || !isRealString( params.room )) {
+        if ( !isRealString( params.name) || !isRealString( params.room_select )) {
             return callback( 'Name and room name are required' );
         }
-        socket.join( params.room );
+        socket.join( params.room_select );
         users.removeUser( socket.id );
-        users.addUser( socket.id, params.name, params.room );
+        users.addUser( socket.id, params.name, params.room_select );
+        rooms.addRoom( params.room_select );
 
-        io.to( params.room ).emit( 'updateUserList', users.getUserList( params.room ));
+        io.to( params.room_select ).emit( 'updateUserList', users.getUserList( params.room_select ));
 
         // socket.emit sends to one user
         socket.emit( 'newMessage', generateMessage(
             'Admin', 'Welcome to the chat app' ));
         // socket.broadcast.emit sends to all but current user
-        socket.broadcast.to( params.room).emit( 'newMessage', generateMessage(
+        socket.broadcast.to( params.room_select).emit( 'newMessage', generateMessage(
         'Admin', `${params.name} joined the chat app` ));
         callback();
     });
@@ -69,6 +75,10 @@ io.on( 'connection', ( socket ) => {
 });
 
 app.use( express.static( publicPath ));
+
+app.get( '/get_rooms', ( request, response ) => {
+   response.send( rooms.getRoomList() );
+});
 
 server.listen( port, () => {
     console.log( `Chat server is up at port ${port}` );

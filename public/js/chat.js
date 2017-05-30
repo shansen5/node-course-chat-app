@@ -17,12 +17,13 @@ function scrollToBottom() {
     if ( totalHeight >= scrollHeight ) {
         messages.scrollTop( scrollHeight );
     }
-
 }
 
 socket.on( 'connect', function() {
     console.log( 'Connected to server' );
     var params = jQuery.deparam( window.location.search );
+    jQuery( '#room-name').text( params.room_select );
+
     socket.emit( 'join', params, function( err ) {
         if ( err ) {
             alert( err );
@@ -30,9 +31,9 @@ socket.on( 'connect', function() {
         } else {
             console.log( 'No error' );
         }
-
     });
 });
+
 socket.on( 'disconnect', function() {
     console.log( 'Disconnected from server' );
 });
@@ -83,7 +84,6 @@ jQuery( '#message-form' ).on( 'submit', function( e ) {
     e.preventDefault();
     var messageTextbox = jQuery( '[name=message]' );
     socket.emit( 'createMessage', {
-        from: 'User',
         text: messageTextbox.val()
     }, function() {
         messageTextbox.val( '' );
